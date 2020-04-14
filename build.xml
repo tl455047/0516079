@@ -247,9 +247,12 @@
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
  
   <target name="test" depends="build.modules" description="build all">
-      <java classname="PriorityQueueTest">
-            <classpath path="${lab02.output.dir}"/>  
-            <jar="${path.variable.maven_repository}" junit.textui.TestRunner/>
-      </java>
+      <junit printsummary="yes"> 
+            <test name="PriorityQueueTest"/> 
+            <classpath> 
+                <pathelement location="${lab02.output.dir}"/>
+                <pathelement location="${path.variable.maven_repository}"/>  
+            </classpath>
+      </junit> 
   </target>
 </project>
