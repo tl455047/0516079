@@ -86,12 +86,12 @@ public class PriorityQueueTest {
     @org.junit.Test
     public void offer() {
         Assertions.assertThrows(NullPointerException.class, () -> {
-            pq.offer(null);
+            //pq.offer(null);
         });
 
         pq1 = new PriorityQueue<A>();
         Assertions.assertThrows(ClassCastException.class, () -> {
-            pq1.offer(new A());
+            //pq1.offer(new A());
         });
     }
 
@@ -119,7 +119,7 @@ public class PriorityQueueTest {
     @org.junit.Test
     public void addAll() {
         Assertions.assertThrows(NullPointerException.class, () -> {
-            //pq.addAll(null);
+            pq.addAll(null);
         });
 
     }
