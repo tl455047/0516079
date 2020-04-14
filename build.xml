@@ -248,6 +248,7 @@
   <target name="run" depends="build.modules">
       <java classname="PriorityQueueTest" depends="build.modules">
           <classpath refid="lab02.module.production.classpath"/>
+          <src refid="lab02.module.sourcepath"/>
       </java>
   </target>
   <target name="test" depends="build.modules" description="build all"/>
