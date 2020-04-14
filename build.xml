@@ -245,6 +245,10 @@
   <target name="clean" depends="clean.module.lab02" description="cleanup all"/>
   
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
-  
+  <target name="run" depends="build.modules">
+      <java classname="PriorityQueueTest">
+          <classpath path="${out.production.lab02}"/>
+      </java>
+  </target>
   <target name="test" depends="build.modules" description="build all"/>
 </project>
