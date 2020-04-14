@@ -1,4 +1,4 @@
 language: java
 jdk:
   -openjdk11
-install: ant PriorityQueueTest
+install: ant all
