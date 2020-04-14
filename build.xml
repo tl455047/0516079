@@ -251,7 +251,8 @@
             <test name="PriorityQueueTest"/> 
             <classpath>
                 <pathelement location="/home/travis/build/tl455047/0516079/out/production/lab02"/>
-                <pathelement location="/home/travis/build/tl455047/0516079/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>  
+                <pathelement location="/home/travis/build/tl455047/0516079/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
+                <pathelement location="/home/travis/-openjdk11"/>
             </classpath>
       </junit> 
   </target>
