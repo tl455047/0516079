@@ -245,6 +245,8 @@
   <target name="clean" depends="clean.module.lab02" description="cleanup all"/>
   
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
-  
+  <java classname="PriorityQueueTest" depends="build.modules">
+       <classpath refid="lab02.module.production.classpath"/>
+  </java>
   <target name="test" depends="build.modules" description="build all"/>
 </project>
