@@ -251,7 +251,7 @@
             <test name="PriorityQueueTest"/> 
             <classpath> 
                 <pathelement location="${lab02.output.dir}"/>
-                <pathelement location="${module.jdk.classpath.lab02}"/>  
+                <pathelement location="lab02.module.production.classpath"/>  
             </classpath>
       </junit> 
   </target>
