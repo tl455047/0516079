@@ -247,7 +247,7 @@
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
   <java classname="TestRunner" depends="build.modules">
       <classpath>
-          <pathelement path="${lab02.output.dir}"/>
+          <pathelement path="lab02.module.production.classpath"/>
       </classpath>
   </java>
   <target name="test" depends="build.modules" description="build all"/>
