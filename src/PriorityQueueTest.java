@@ -119,7 +119,7 @@ public class PriorityQueueTest {
     @org.junit.Test
     public void addAll() {
         Assertions.assertThrows(NullPointerException.class, () -> {
-            pq.addAll(null);
+            //pq.addAll(null);
         });
 
     }
