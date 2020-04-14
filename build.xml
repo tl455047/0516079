@@ -250,8 +250,8 @@
       <junit printsummary="yes"> 
             <test name="PriorityQueueTest"/> 
             <classpath> 
-                <pathelement location="${lab02.output.dir}"/>
-                <pathelement location="lab02.module.production.classpath"/>  
+                <pathelement location="/home/travis/build/tl455047/0516079/out/production/lab02"/>
+                <pathelement location="/home/travis/build/tl455047/0516079/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>  
             </classpath>
       </junit> 
   </target>
