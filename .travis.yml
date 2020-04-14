@@ -4,4 +4,4 @@ jdk:
 install: 
 script:
   -ant test
-  java ./out/production/lab02/PriorityQueueTest.class
+  -java ./out/production/lab02/PriorityQueueTest.class
