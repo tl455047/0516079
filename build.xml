@@ -251,7 +251,7 @@
             <test name="PriorityQueueTest"/> 
             <classpath>
                 <pathelement location="/home/travis/build/tl455047/0516079/out/production/lab02"/>
-                <pathelement location="/usr/share/ant/lib"/>  
+                <pathelement location="/usr/share/ant/lib/junit.jar"/>  
             </classpath>
       </junit> 
   </target>
