@@ -3,5 +3,3 @@ jdk:
   -openjdk11
 install: 
 script:
-  -ant test
-  -java ./out/production/lab02/PriorityQueueTest.class
