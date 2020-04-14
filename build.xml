@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="lab02" default="all">
+<project name="lab02" default="test">
   
   
   <property file="build.properties"/>
@@ -246,5 +246,5 @@
   
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
   
-  <target name="all" depends="build.modules" description="build all"/>
+  <target name="test" depends="build.modules" description="build all"/>
 </project>
