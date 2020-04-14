@@ -3,6 +3,6 @@ jdk:
   -openjdk11
 install: 
 before_script:
-   - sudo apt-get install ant-optional
+   
 script:
   - ant test
