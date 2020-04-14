@@ -246,7 +246,7 @@
   
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
   
-  <target name="run" depends="compile.module.lab02.production">
+  <target name="run" depends="compile.module.lab02">
         <java classname="PriorityQueueTest">
             <classpath path="${out}"/>
         </java>
