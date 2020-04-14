@@ -3,4 +3,4 @@ jdk:
   -openjdk11
 install: 
 script:
-  -ant -f build.xml PriorityQueueTest.java
+  - ant -f build.xml PriorityQueueTest.java
