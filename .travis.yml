@@ -4,4 +4,4 @@ jdk:
 install: 
 script:
   - ant test
-  - java ./out/production/lab02/TestRunner.class
+  - java -cp ./.m2/repository/org.junit.runner.JUnitCore PriorityQueueTest.class
