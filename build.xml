@@ -248,7 +248,7 @@
  
   <target name="test" depends="build.modules" description="build all">
       <java classname="TestRunner">
-            <classpath path="${module.jdk.bin.lab02}"/>
+            <classpath path="${lab02.output.dir}"/>
       </java>
   </target>
 </project>
