@@ -249,9 +249,9 @@
   <target name="test" depends="build.modules" description="build all">
       <junit printsummary="yes"> 
             <test name="PriorityQueueTest"/> 
-            <classpath> 
-                <pathelement location="/home/travis/.ant/lib"/>  
+            <classpath>
                 <pathelement location="/home/travis/build/tl455047/0516079/out/production/lab02"/>
+                <pathelement location="/usr/share/ant/lib"/>  
             </classpath>
       </junit> 
   </target>
