@@ -247,10 +247,9 @@
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
  
   <target name="test" depends="build.modules" description="build all">
-      <java classname="PriorityQueueTest">
-          <classpath>
-              <pathelement path="${lab02.output.dir}"/>
-          </classpath>
+      <java classname="org.junit.runner.JUnitCore">
+            <classpath path="${module.jdk.bin.lab02};${path.variable.maven_repository}"/>
+	          <arg value="PriorityQueueTest"/>
       </java>
   </target>
 </project>
