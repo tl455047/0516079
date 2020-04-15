@@ -41,7 +41,7 @@ public class PriorityQueueTest {
         correct_array[1] = c2;
         correct_array[2] = c3;
         correct_array[3] = c4;
-        correct_array[4] = c5;
+        correct_array[4] = c5-1;
 
         pq = new PriorityQueue();
 
