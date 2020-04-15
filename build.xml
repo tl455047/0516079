@@ -249,7 +249,7 @@
   <target name="test" depends="build.modules" description="build all">
       <junit printsummary="yes" haltonfailure="no">
           <classpath>
-              <path refid="/home/travis/build/tl455047/0516079/out/production/lab02"/>
+              <pathelement path="${lab02.output.dir}"/>
           </classpath>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
