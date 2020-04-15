@@ -255,7 +255,7 @@
       <formatter type="plain" usefile="false"/>
       <batchtest fork="yes"
                  todir="/home/travis/build/tl455047/0516079/out/production/lab02">
-        <fileset dir="/home/travis/build/tl455047/0516079/src>
+        <fileset dir="/home/travis/build/tl455047/0516079/src">
           <include name="**/*Test.java"/>
         </fileset>
       </batchtest>
