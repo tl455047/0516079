@@ -247,7 +247,7 @@
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
  
   <target name="test" depends="build.modules" description="build all">
-      <junit printsummary="yes" haltonfailure="no">
+      <junit printsummary="yes" haltonfailure="yes">
           <classpath>
               <pathelement path="${lab02.output.dir}"/>
               <pathelement path="${path.variable.maven_repository}/junit/junit/4.12/junit-4.12.jar"/>
