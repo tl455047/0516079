@@ -250,6 +250,7 @@
       <junit printsummary="yes" haltonfailure="no">
           <classpath>
               <pathelement path="${lab02.output.dir}"/>
+              <pathelement path="${lab02.module.production.classpath}"/>
           </classpath>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
