@@ -247,13 +247,18 @@
   <target name="build.modules" depends="init, clean, compile.module.lab02" description="build all modules"/>
  
   <target name="test" depends="build.modules" description="build all">
-      <junit printsummary="yes" showoutput="true"> 
-            <test name="PriorityQueue"/> 
-            <classpath>
-                <pathelement location="/home/travis/build/tl455047/0516079/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
-                <pathelement location="/home/travis/build/tl455047/0516079/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
-                <pathelement location="/home/travis/build/tl455047/0516079/out/production/lab02"/>
-            </classpath>
-      </junit> 
+      <junit printsummary="yes" haltonfailure="no">
+          <classpath>
+              <path refid="/home/travis/build/tl455047/0516079/out/production/lab02"/>
+          </classpath>
+      <formatter type="xml"/>
+      <formatter type="plain" usefile="false"/>
+      <batchtest fork="yes"
+                 todir="/home/travis/build/tl455047/0516079/out/production/lab02">
+        <fileset dir="/home/travis/build/tl455047/0516079/out/production/lab02">
+          <include name="**/*Test.java"/>
+        </fileset>
+      </batchtest>
+      </junit>
   </target>
 </project>
