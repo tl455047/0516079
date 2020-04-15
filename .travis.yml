@@ -6,3 +6,4 @@ before_script:
   - sudo apt-get install ant-optional
 script:
   - ant test
+  - set -o pipefail && xcodebuild [flags] | xcpretty
